@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@200;600&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Geologica', sans-serif;
+}
+
+body * {
+    box-sizing: border-box;
+}
+.main-login{
+    width: 100vw;
+    height: 100vh;
+    background: #080661;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-login> h1 {
+    color: #c9b825;
+    font-size: 3vw;
+}
+
+.right-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #080736;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000057;
+}
+
+.card-login> h1 {
+    color: #c9b825;
+    font-weight: 800;
+    margin: 0;
+} 
+
+.textfield {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.textfield> input {
+    width: 100%;
+    height: 20%;
+    border: none;
+    border-radius: 20px;
+    padding: 15px;
+    background-color: #26257c75;
+    color: aliceblue;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield> label {
+    color: aliceblue;
+    margin-bottom: 5px;
+}
+
+.textfield> input::placeholder {
+    color: rgba(199, 205, 211, 0.623);
+}
+
+.btn-login {
+    background-color: aliceblue;
+    margin: 25px;
+    width: 220px;
+    border-radius: 8px;
+    border: none;
+    padding: 16px 0px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #080736;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px rgba(240, 248, 255, 0.301);
+}
+
+.img-login {
+    width: 35vw;
+}
+
+@media only screen and (max-width: 600px){
+    .main-login{
+        flex-direction: column;
+    }
+
+    .left-login > h1{
+        display: none;
+    }
+
+    .left-login{
+        width: 100%;
+        height: auto;
+    }
+
+    .right-login{
+        width: 100%;
+        height: auto;
+    }
+
+    .btn-login{
+        width: 100%;
+    }
+
+    .img-login{
+        width: 50vw;
+    }
+
+}
